@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">genero</th>
+        <th scope="col">año</th>
+        <th scope="col">duración</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <th scope="row">1</th>
+        <td>{{movie.id}}</td>
+        <td>{{movie.name}}</td>
+        <td>{{movie.genero}}</td>
+        <td>@{{movie.year}}</td>
+        <td>@{{movie.duration}}</td>
+        <td >
+          <a class="btn btn-primary btn-sn" routerLink="/form/{{movie.id}}"> ver editar </a>
+          <a class="btn btn-primary btn-sn btn-danger" (click)="delete(movie.id)"> ver editar </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

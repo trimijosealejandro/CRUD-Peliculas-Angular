@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_module/boostrap",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "MyProyect"
+  "defaultProject": "MyProyect",
+  "cli": {
+    "analytics": "fefcd959-8e38-4ae9-af09-455f9ddc817a"
+  }
 }

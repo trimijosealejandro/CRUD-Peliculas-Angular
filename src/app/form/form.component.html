@@ -1,0 +1,27 @@
+<h2>Crear pelicula</h2>
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre</label>
+      <input type="text" [(ngModel)]="movie.name" class="form-control" id="name" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="descripción" class="form-label">Descripción</label>
+      <input type="text"[(ngModel)]="movie.descripción" class="form-control" id="descripción" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="genero" class="form-label">Genero</label>
+      <input type="text"[(ngModel)]="movie.genero" class="form-control" id="genero" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="año" class="form-label">Año</label>
+      <input type="number"[(ngModel)]="movie.year" class="form-control" id="año" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="col-auto">
+      <button (click)="saveMovie()" class="btn btn-primary mb-3">Guardar</button>
+    </div>
+  </form>
